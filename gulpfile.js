@@ -6,7 +6,7 @@ const util = require( 'util' )
 const exec = util.promisify( require( 'child_process' ).exec )
 
 const BUILD_COMMAND = "npm run build"
-const c = "npm ci"
+const BUILD_CI_COMMAND = "npm ci"
 const CLEAN_COMMAND = "npm run clean"
 const TEST_COMMAND = "npm test"
 
