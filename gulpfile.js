@@ -15,14 +15,13 @@ function build() {
   ])
 }
 
-function cleanAdmin() {
-  return exec(CLEAN_COMMAND, {cwd: `${process.cwd()}/admin`})
-}
-
-function cleanSite() {
-  return exec(CLEAN_COMMAND, {cwd: `${process.cwd()}/site`})
+function clean() {
+  return Promise.all([
+    exec(CLEAN_COMMAND, {cwd: `${process.cwd()}/admin`}),
+    exec(CLEAN_COMMAND, {cwd: `${process.cwd()}/site`})
+  ])
 }
 
 exports.build = build
-exports.clean = parallel(cleanAdmin, cleanSite)
-exports.default = series(exports.clean, build)
+exports.clean = clean
+exports.default = series(clean, build)
