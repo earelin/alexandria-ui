@@ -31,8 +31,8 @@ function test() {
 
 function applyCommandToAllSubprojects(command) {
   return Promise.all([
-    exec(command, {cwd: `${process.cwd()}/admin`, env: environment}),
-    exec(command, {cwd: `${process.cwd()}/site`, env: environment})
+    exec(command, {cwd: `${process.cwd()}/admin`}),
+    exec(command, {cwd: `${process.cwd()}/site`})
   ])
 }
 
