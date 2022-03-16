@@ -1,15 +1,19 @@
-import './App.css';
+import './App.css'
+import Login from "./user/Login";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import UserList from "./user/UserList";
+import React from "react";
+import Home from "./Home";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <div id='Layout' className='pure-g'>
-        <div className='pure-u-1-3'>First</div>
-        <div className='pure-u-1-3'>Second</div>
-        <div className='pure-u-1-3'>Third</div>
-      </div>
+    <div id="main" className="layouts">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/users" element={<UserList />} />
+        </Routes>
+      </BrowserRouter>
     </div>
-  );
+  )
 }
-
-export default App;
