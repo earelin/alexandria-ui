@@ -4,7 +4,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import UserList from "./user/UserList";
 import React from "react";
 import Home from "./Home";
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 import _ from 'lodash'
 
 export default function App() {
