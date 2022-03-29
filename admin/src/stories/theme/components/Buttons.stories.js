@@ -10,18 +10,6 @@ export const ButtonTags = args => <ButtonTagsComponent/>
 export const OutlineButtons = args => <OutlineButtonsComponent/>
 export const Sizes = args => <SizesComponent/>
 
-function ButtonTagsComponent() {
-  return (
-    <div className="hstack gap-3">
-      <a className="btn btn-primary" href="#" role="button">Link</a>
-      <button className="btn btn-primary" type="submit">Button</button>
-      <input className="btn btn-primary" type="button" value="Input"/>
-      <input className="btn btn-primary" type="submit" value="Submit"/>
-      <input className="btn btn-primary" type="reset" value="Reset"/>
-    </div>
-  )
-}
-
 function ExamplesComponent() {
   return (
     <div className="hstack gap-3">
@@ -61,6 +49,18 @@ function SizesComponent() {
       <button type="button" className="btn btn-secondary btn-lg">Large button</button>
       <button type="button" className="btn btn-primary btn-sm">Small button</button>
       <button type="button" className="btn btn-secondary btn-sm">Small button</button>
+    </div>
+  )
+}
+
+function ButtonTagsComponent() {
+  return (
+    <div className="hstack gap-3">
+      <a className="btn btn-primary" href="#" role="button">Link</a>
+      <button className="btn btn-primary" type="submit">Button</button>
+      <input className="btn btn-primary" type="button" value="Input"/>
+      <input className="btn btn-primary" type="submit" value="Submit"/>
+      <input className="btn btn-primary" type="reset" value="Reset"/>
     </div>
   )
 }
