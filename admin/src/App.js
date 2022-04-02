@@ -1,15 +1,29 @@
-import './App.css';
+import './App.scss'
+import Login from "./user/Login";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import UserList from "./user/UserList";
+import React from "react";
+import Home from "./Home";
+import { useSelector } from 'react-redux'
+import _ from 'lodash'
+import Navbar from './Navbar'
 
-function App() {
+export default function App() {
+  const user = useSelector(state => state.user.value)
+  const isLoggedIn = !_.isNil(user)
+
   return (
-    <div className="App">
-      <div id='Layout' className='pure-g'>
-        <div className='pure-u-1-3'>First</div>
-        <div className='pure-u-1-3'>Second</div>
-        <div className='pure-u-1-3'>Third</div>
-      </div>
+    <div id="main" className="layouts">
+      {isLoggedIn
+        ? <BrowserRouter>
+          <Navbar/>
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/users" element={<UserList/>}/>
+          </Routes>
+        </BrowserRouter>
+        : <Login/>
+      }
     </div>
-  );
+  )
 }
-
-export default App;
