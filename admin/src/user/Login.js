@@ -1,12 +1,13 @@
 import {Button, Form, Row} from 'react-bootstrap'
 import {useForm} from 'react-hook-form'
+import {loginUser} from './UserService'
 
 export default function Login() {
 
   const {register, handleSubmit} = useForm()
 
   function onSubmit(e) {
-    console.log('You clicked submit: ', JSON.stringify(e))
+    loginUser(e.username, e.password)
   }
 
   return (

@@ -6,6 +6,7 @@ import React from "react";
 import Home from "./Home";
 import { useSelector } from 'react-redux'
 import _ from 'lodash'
+import Navbar from './Navbar'
 
 export default function App() {
   const user = useSelector(state => state.user.value)
@@ -15,6 +16,7 @@ export default function App() {
     <div id="main" className="layouts">
       {isLoggedIn
         ? <BrowserRouter>
+          <Navbar/>
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/users" element={<UserList/>}/>
