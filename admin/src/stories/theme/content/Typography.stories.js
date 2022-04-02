@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default {
-  title: 'Content/Typography',
+  title: 'Theme/Content/Typography',
   component: HeadingsComponent
 }
 

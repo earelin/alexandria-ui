@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default {
-  title: 'Components/Alerts',
+  title: 'Theme/Components/Alerts',
   component: ExamplesComponent
 }
 

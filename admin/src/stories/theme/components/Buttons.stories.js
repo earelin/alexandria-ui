@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default {
-  title: 'Components/Buttons',
+  title: 'Theme/Components/Buttons',
   component: ExamplesComponent
 }
 

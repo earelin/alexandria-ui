@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default {
-  title: 'Forms/Select',
+  title: 'Theme/Forms/Select',
   component: DefaultComponent
 }
 

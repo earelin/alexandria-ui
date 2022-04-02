@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default {
-  title: 'Helpers/Colored links',
+  title: 'Theme/Helpers/Colored links',
   component: ExampleComponent
 }
 

@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default {
-  title: 'Components/Close button',
+  title: 'Theme/Components/Close button',
   component: ExampleComponent
 }
 

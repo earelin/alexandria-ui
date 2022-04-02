@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default {
-  title: 'Components/List group',
+  title: 'Theme/Components/List group',
   component: ExampleComponent
 }
 

@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default {
-  title: 'Forms/Form control',
+  title: 'Theme/Forms/Form control',
   component: ExamplesComponent
 }
 

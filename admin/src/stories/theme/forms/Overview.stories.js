@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default {
-  title: 'Forms/Overview',
+  title: 'Theme/Forms/Overview',
   component: OverviewComponent
 }
 

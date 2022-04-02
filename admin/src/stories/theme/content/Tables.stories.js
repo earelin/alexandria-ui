@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default {
-  title: 'Content/Tables',
+  title: 'Theme/Content/Tables',
   component: OverviewComponent
 }
 

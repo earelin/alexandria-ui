@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default {
-  title: 'Components/Card',
+  title: 'Theme/Components/Card',
   component: ExampleComponent
 }
 
